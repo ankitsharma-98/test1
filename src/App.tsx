@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import ComponentC from './components/ComponentC';
+import CounterOne from './components/CounterOne';
+import CounterTwo from './components/CounterTwo';
 
 export const UserContext = React.createContext('')
 export const TestContext = React.createContext('')
@@ -8,11 +10,7 @@ export const TestContext = React.createContext('')
 function App() {
   return (
     <div className="App">
-      <UserContext.Provider value={'ankit'}>
-        <TestContext.Provider value={'test value'}>
-          <ComponentC/>
-        </TestContext.Provider>
-      </UserContext.Provider>
+     <CounterTwo/>
     </div>
   );
 }
